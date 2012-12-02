@@ -1,15 +1,15 @@
 from distutils.core import setup
 setup(
-    name = "django-smartsettings",
-    packages = ["smartsettings"],
-    version = "0.1.0",
-    description = "Django settings manager for easy development and easy deployment with no place for mistakes.",
-    author = "Tomek Kopczuk",
-    author_email = "tomek@bladepolska.com",
-    url = "http://docs.django-smartsettings.com/",
-    download_url = "",
-    keywords = ["django", "settings", "manager", "settings manager"],
-    classifiers = [
+    name="django-smartsettings",
+    packages=["smartsettings"],
+    version="0.1.0",
+    description="Django settings manager for easy development and easy deployment with no place for mistakes.",
+    author="Tomek Kopczuk",
+    author_email="tomek@bladepolska.com",
+    url="http://www.django-smartsettings.com/",
+    download_url="https://github.com/tkopczuk/django-smartsettings/archive/v0.1.0.tar.gz",
+    keywords=["django", "settings", "manager", "settings manager"],
+    classifiers=[
             "Development Status :: 4 - Beta",
             "Environment :: Console",
             "Framework :: Django",
@@ -22,7 +22,7 @@ setup(
             "Topic :: Software Development :: Libraries :: Python Modules",
             "Topic :: Software Development :: Build Tools",
         ],
-    long_description = """\
+    long_description="""\
 Multi-environment settings for multi-dev projects.
 
 -------------------------------------
