@@ -1,3 +1,5 @@
+# coding: utf-8
+
 # Created by Tomek Kopczuk, @tkopczuk
 # Copyright (c) 2012, Blade Polska s.c., contact@bladepolska.com
 
