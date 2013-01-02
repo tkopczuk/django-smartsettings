@@ -45,8 +45,12 @@ def exit_with_error(error="", error_format_args=[], info=None, info_format_args=
 
 
 def get_running_flavour():
-    return os.environ.get('ENV_FLAVOUR', 'DEV')
+    if 'test' in sys.argv:
+        running_flavour = "TESTING"
+    else:
+        running_flavour = os.environ.get('ENV_FLAVOUR', 'DEV')
 
+    return running_flavour
 
 def validate_and_heal_db_settings(foreign_globals):
     def validate_db_settings():
@@ -83,7 +87,7 @@ def update_globals_with_settings(foreign_globals, settings):
 
 
 DEFAULT_SETTINGS = {
-    'FLAVOURS': ('DEV', 'PRODUCTION'),
+    'FLAVOURS': ('DEV', 'TESTING', 'PRODUCTION'),
     'DEFAULT': 'DEV'  # default flavour always loads localsettings.py!
 }
 
