@@ -45,7 +45,7 @@ def exit_with_error(error="", error_format_args=[], info=None, info_format_args=
 
 
 def get_running_flavour():
-    if 'test' in sys.argv:
+    if 'test' in sys.argv or 'jenkins' in sys.argv:
         running_flavour = "TESTING"
     else:
         running_flavour = os.environ.get('ENV_FLAVOUR', 'DEV')
