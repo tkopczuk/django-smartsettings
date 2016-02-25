@@ -22,7 +22,11 @@ __author__ = 'Tomek Kopczuk'
 __license__ = 'ISC'
 __copyright__ = 'Copyright 2012 Tomek Kopczuk'
 
-from django.utils import importlib
+import django
+if django.get_version() >= 1.9:
+    import importlib
+else:
+    from django.utils import importlib
 import os
 import sys
 
